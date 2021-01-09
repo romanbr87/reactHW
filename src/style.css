@@ -1,0 +1,132 @@
+
+img {
+    width: 65px;
+    height: 90%;
+}
+
+.App {
+    margin: 50px auto 0 auto;
+    height: 600px;
+    width: 50%;
+    border: 2px solid green;
+
+}
+
+#navBar{
+    vertical-align: middle;
+    border-bottom: 2px solid blue;
+    height: 10%;
+}
+
+#homeImg, #cartImg {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+#homeImg:hover, #cartImg:hover {
+    background-color:rosybrown;
+}
+
+#cartImg {
+    float: right;
+    margin-right: 5%;
+}
+
+#homeImg {
+    float: left;
+    margin-left: 5%;
+}
+
+#navBar span {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+  
+#homeDiv {
+    display: flex;
+    align-items: center;
+
+    height: 89.75%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+
+    background-color:brown;
+ 
+}
+
+#homeDiv > #cartBody, #homeDiv > #listBody {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#cartBody {      
+    width: 70%;
+    /*background-color: red;*/
+}
+
+#listBody {
+    width: 30%;
+    /*background-color: chartreuse;*/
+}
+
+.item > div, #listBody span, .cartItem,  #Btn  {
+    border: 2px solid salmon;
+    border-radius: 10px;
+    background-color: rgb(68, 114, 196);
+    max-width: 55%;
+    width: 55%;
+
+    margin: 10px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+#listBody > span, .cartItem,  #Btn  {
+    display: block;    
+}
+
+.item > div > *, .cartItem,  #Btn {
+    top: 50%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.item > div > button,  #Btn {
+    float: right;
+    border: 2px solid black;
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+.item > div > button:hover, #Btn:hover{
+    background-color: rgb(59, 64, 112);
+}
+
+.item > div > button:focus{
+    outline: none;
+}
+
+.cartItem {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cartItemPanel {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin: auto;
+}
+#cartItemPanel .cartItem, #Btn {
+    display: inline;
+    margin-left: 10px;
+}
